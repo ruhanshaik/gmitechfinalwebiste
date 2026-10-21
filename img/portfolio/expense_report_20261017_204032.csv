@@ -1,0 +1,5 @@
+<!-- DB connected OK -->﻿<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>/home/vol9_7/infinityfree.com/if0_43170271/htdocs/expenses/reports.php</b> on line <b>79</b><br />
+Category,Entries,"Total Amount"
+"Building Maintenance",1,1000.00
+"GRAND TOTAL",,1000.00
