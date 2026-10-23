@@ -33,7 +33,7 @@ All pages have a single H1. Template heading levels are not consistently sequent
 ## Implemented
 
 - Follow-up Ballari local SEO updates are documented in [SEO-KEYWORDS-REPORT.md](./SEO-KEYWORDS-REPORT.md): mapped keyword tags, geo and hreflang metadata, richer service/local business schema, social image tags, and navigation/footer link titles.
-- `img/faces/image.png` is a verified GMI wordmark (99x43 pixels) and is now used for organization/social image references. A purpose-made large social-preview image is still recommended.
+- The earlier `img/faces/image.png` reference did not exist in the workspace. Open Graph, Twitter, and organization image references now use generated favicon artwork derived from the existing G-mark asset.
 - The existing sitemap already lists all eight real pages with `lastmod` set to `2026-10-21`; `robots.txt` already allows crawling and references the sitemap.
 - Added `en-IN`, robots, keywords, author, geo, theme-color, canonical, Open Graph, and Twitter metadata to every actual HTML page.
 - Added `Organization`/`ProfessionalService`/`LocalBusiness`, `WebSite`, and `WebPage` JSON-LD to the homepage.
@@ -44,12 +44,12 @@ All pages have a single H1. Template heading levels are not consistently sequent
 
 ## Outstanding issues and decisions
 
-- The project has no favicon, Apple touch icon, or large dedicated social-preview image. The verified GMI wordmark at `img/faces/image.png` is now referenced for organization and social sharing; it is 99x43 pixels, so a purpose-made social-preview image is recommended.
-- Existing asset references still need attention: `index.html` references missing `img/photo/2.jpeg`, `portfolio.html` references missing `img/portfolio/rag-knowledge-assistant.png`, and all pages reference absent `css/plugins/fancybox.min.css`. They were not changed because the request prohibits UI/image changes.
-- All internal home links now point to `index.html`; canonical, Open Graph, structured-data, and sitemap URLs use `https://gmitech.in/`. The root URL will serve the homepage when the production host uses the standard `index.html` default-document behavior. The old `home-1.html` route is retained as a noindex browser redirect to the root, for compatibility with GitHub Pages. A true HTTP 301, HTTP-to-HTTPS, and `www` normalization require redirect rules at the hosting/DNS layer.
+- Favicon variants, an Apple touch icon, and a web manifest now exist at the site root. Google may continue to show a cached favicon until it recrawls the site.
+- The missing homepage image now points to `img/photo/2.jpg`; the unavailable RAG portfolio card has been removed; and unused Fancybox stylesheet and script references have been removed.
+- Internal home links point to `index.html`; canonical, Open Graph, structured-data, and sitemap URLs use `https://gmitech.in/`. No GitHub Pages branch/folder configuration or `CNAME` file is present in this workspace, so live publishing and DNS cannot be confirmed here. True host redirects require hosting/DNS configuration.
 - The actual page filenames differ from several requested in the brief. No duplicate “About” or Ballari landing page was created because no matching content/page exists locally.
-- The brief's requested phone numbers and contact emails are included in structured data as supplied. Visible contact content was not changed by this SEO work; verify that the provided details are current and match the live contact page before deployment. Search engines may ignore structured data that conflicts with visible content.
-- No local Git repository is available in this workspace, so a Git diff/stat could not be produced. Page-body text, CSS, scripts, layout, and images were not changed for this task.
+- The verified primary contact number is now consistent across visible phone/WhatsApp links and the homepage organization schema; secondary support details remain as previously listed.
+- No local Git repository is available in this workspace, so a Git diff/stat could not be produced. The later website remediation changed HTML, CSS, JavaScript, metadata, and favicon assets.
 - Search rankings, rich results, and Google sitelinks cannot be guaranteed by metadata or schema and need post-deployment verification.
 
 ## Post-deploy checklist

@@ -14,6 +14,13 @@
 //
 
 (function () {
+  if (
+    window.matchMedia("(max-width: 767px)").matches ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
+    return;
+  }
+
   // Scroll Variables (tweakable)
   var defaultOptions = {
     frameRate: 150, // [Hz]

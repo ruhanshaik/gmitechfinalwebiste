@@ -71,14 +71,14 @@ Terms for unverified frameworks/platforms (WordPress, React, Next.js, React Nati
 - Existing project `ItemList`, contact-point data, page descriptions, and breadcrumbs are retained/extended; no FAQ, review, or aggregate-rating schema was added.
 - All pages have `geo.region`, `geo.placename`, ICBM/geo.position, and self-referencing `en-IN` hreflang metadata. `robots.txt` allows crawling and declares the sitemap. Sitemap `lastmod` is `2026-10-21`.
 - Existing generic homepage image alternatives were improved. Navigation/footer link `title` attributes were added without changing their visible labels.
-- `img/faces/image.png` is the verified GMI wordmark and is now used as the logo/social image. It is only 99x43 pixels; a dedicated large social-preview asset would work better.
+- The page metadata now references root favicon assets generated from the existing `img/faces/i.jpeg` G-mark. A purpose-designed social-preview image can still be added if one is approved.
 
 ## Needs owner decision
 
 - Confirm whether GMI Tech offers digital marketing, SEO, Google Ads/social marketing, local SEO, or logo/brand design before advertising those services in metadata or structured data. They were not added as offered services or `knowsAbout` topics.
 - Confirm whether custom billing/invoicing is a directly offered service. A billing/inventory project appears in the portfolio, but it is not listed as a separate service on the services page.
-- Confirm the supplied structured-data phone numbers and emails. Existing visible contact details differ from those supplied for schema; they were not edited.
-- The homepage references `img/photo/2.jpeg`, but the project contains `img/photo/2.jpg`; the portfolio references `img/portfolio/rag-knowledge-assistant.png`, which is absent; and `css/plugins/fancybox.min.css` is referenced but absent. These existing asset-route issues were left unchanged to honor the no-UI-change constraint.
+- The primary phone number now matches the verified contact-page number `9036717885` across phone/WhatsApp links and homepage organization schema. The separate support contact details remain in the structured data and should be confirmed by the business owner.
+- The former broken image reference now uses the existing `img/photo/2.jpg` asset; the unavailable RAG portfolio card is removed; and the missing unused Fancybox CSS/JS references are no longer loaded.
 - No verified Google Maps business profile URL exists in the files, so `hasMap` was omitted.
 
 ## Content-gap suggestions (not implemented)
